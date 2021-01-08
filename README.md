@@ -10,11 +10,22 @@
 * To use a detail form template, the first thing you'll need to do is create a YourDatabase.4dbase/Resources/Mobile/form/detail folder.
 * Then drop the detail form folder into it.
 
-For instance
+For instance with git go to your database folder
 
 ```bash
 cd YourDatabase.4dbase/Resources/Mobile/form/detail
+```
+
+If your project is not a git repository, just clone
+
+```bash
 git clone https://github.com/mesopelagique/form-detail-WebArea.git WebArea
+```
+
+otherwise use a submodule
+
+```bash
+git submodule add https://github.com/mesopelagique/form-detail-WebArea.git WebArea
 ```
 
 ## How to use it
