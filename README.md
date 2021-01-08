@@ -3,7 +3,7 @@
 [![Language][swift-shield]][swift-url]
 [![check][check-shield]][check-url]
 
-![template](template.gif)
+![template](https://github.com/mesopelagique/form-detail-WebArea/raw/doc/template.gif)
 
 ## How to integrate
 
@@ -24,7 +24,7 @@ In project editor choose this template and drop a field which contains
 * an absolute URL 
   * ex: `https://developer.4d.com/`
 * or a relative URL to the 4d web server 
-  * ex: /4DAction/AnHTTPSharedMethod
+  * ex: `/4DAction/AnHTTPSharedMethod`
 * or html string
   * ex: `<h1>Hello World</h1>`
 
