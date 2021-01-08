@@ -13,7 +13,7 @@ import QMobileUI
 
 /// Generated details form for ___TABLE___ table.
 @IBDesignable
-class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___, WKUIDelegate, WKNavigationDelegate, UIScrollViewDelegate {
+class ___TABLE___DetailsForm: DetailsFormBare, WKUIDelegate, WKNavigationDelegate, UIScrollViewDelegate {
 
     @IBOutlet var webView: WKWebView!
     @IBOutlet weak var reloadButton: UIBarButtonItem!
