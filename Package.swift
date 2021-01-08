@@ -6,6 +6,7 @@ import PackageDescription
 let package = Package(
     name: "4d-for-ios-form-detail-WebArea",
     platforms: [
+        .macOS(.v10_15),
         .iOS(.v14)
     ],
     products: [
