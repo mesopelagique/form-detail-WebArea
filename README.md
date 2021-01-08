@@ -5,6 +5,8 @@
 
 ![template](https://github.com/mesopelagique/form-detail-WebArea/raw/doc/template.gif)
 
+[Full demo base here](https://github.com/mesopelagique/Example-DetailFormWebArea)
+
 ## How to integrate
 
 * To use a detail form template, the first thing you'll need to do is create a YourDatabase.4dbase/Resources/Mobile/form/detail folder.
@@ -39,7 +41,7 @@ In project editor choose this template and drop a field which contains
 * or html string
   * ex: `<h1>Hello World</h1>`
   
-[Demo base here](https://github.com/mesopelagique/Example-DetailFormWebArea)
+![projecteditor](https://github.com/mesopelagique/form-detail-WebArea/raw/doc/projecteditor.png)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
