@@ -38,6 +38,8 @@ In project editor choose this template and drop a field which contains
   * ex: `/4DAction/AnHTTPSharedMethod`
 * or html string
   * ex: `<h1>Hello World</h1>`
+  
+[Demo base here](https://github.com/mesopelagique/Example-DetailFormWebArea)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
