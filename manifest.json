@@ -1,0 +1,8 @@
+{
+  "type": "detailform",
+  "name": "WebArea",
+  "fields": {
+    "count": 1,
+    "max": 1
+  }
+}

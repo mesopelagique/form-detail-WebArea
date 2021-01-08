@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ios="http://www.4d.com">
+	<title>Simple List</title>
+	<defs>
+		<symbol id="cancel">
+			<image x="0" y="0" width="30" height="30" xlink:href="$4DEVAL(tmpl_cancel)"/>
+		</symbol>
+		<text id="cookery" ios:values="f1,f2,f3,f4,f5,f6,f7,f8,f9,f10"/>
+		<!-- template -->
+		<g id="f" visibility="hidden" ios:dy="37">
+			<rect class="bg field" x="14" y="0" width="238" height="30"/>
+			<textArea id="f.label" class="label" x="14" y="8" width="238">field[n]</textArea>
+			<rect id="f" class="droppable field multivalued" x="14" y="0" width="238" height="30" stroke-dasharray="5,2" ios:type="-3"/>
+			<use id="f.cancel" x="224" y="1" xlink:href="#cancel" visibility="hidden"/>
+		</g>
+	</defs>
+	<!-- background -->
+	<rect class="container"/>
+	<rect class="bgcontainer"/>
+	<g id="bgcontainer">
+		 
+		 <g transform="translate(0,50)">
+			<rect class="bgblue" x="11" y="3" width="244" height="160"/>
+			<circle class="bg field" cx="132" cy="50" r="35"/>
+			<path class="webarea" transform="translate(25 20) scale(5)"/>
+			<textArea id="f1.label" class="label" x="97" y="45" width="70"></textArea>
+			<circle id="f1" class="droppable field" cx="132" cy="50" r="35" stroke-dasharray="5,2" ios:type="3" ios:bind="fields[0]"/>
+			<use id="f1.cancel" x="118" y="14" xlink:href="#cancel" visibility="hidden"/>
+		</g>
+
+	</g>
+</svg>
