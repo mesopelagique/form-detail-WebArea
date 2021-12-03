@@ -146,7 +146,7 @@ class ___TABLE___DetailsForm: DetailsFormBare, WKUIDelegate, WKNavigationDelegat
     }
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         reloadButton.image = UIImage(systemName: "xmark")
-        //activityIndicator.startAnimating()
+        // activityIndicator.startAnimating()
     }
 
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
