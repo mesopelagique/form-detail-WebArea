@@ -22,6 +22,9 @@
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" name="ForegroundColor"/>
                         </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="ForegroundColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
