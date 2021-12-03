@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="DuplicateIds,HardcodedText">
+
+    <data>
+
+        <!--ENTITY_VARIABLE-->
+    </data>
+
+    <!-- Generated with detail form template named "WebArea Form" -->
+
+    <WebView
+        android:id="@+id/___SPECIFIC_ID_1___"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="___URL_1___" />
+
+</layout>
