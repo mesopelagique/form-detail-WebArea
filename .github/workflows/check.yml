@@ -55,4 +55,5 @@ jobs:
           fetch-depth: 1
       - name: 👷 Swift build
         run: |
+          cd ios
           curl -fsSL $RELEASE_REPO/form/scripts/swift_build.sh | bash -s
