@@ -16,6 +16,6 @@
         android:id="@+id/___SPECIFIC_ID_1___"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="___URL_1___" />
+        android:text="___TEXT_1___" />
 
 </layout>
