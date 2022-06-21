@@ -53,6 +53,7 @@ class ___TABLE___DetailsForm: DetailsFormBare, WKUIDelegate, WKNavigationDelegat
     }
 
     func loadURL() {
+        webView.configuration.websiteDataStore.httpCookieStore.injectSharedHTTPCookies()
         if let htmlString = self.htmlString {
             self.reloadButton.isEnabled = false
             webView.loadHTMLString(htmlString, baseURL: nil)
@@ -79,6 +80,7 @@ class ___TABLE___DetailsForm: DetailsFormBare, WKUIDelegate, WKNavigationDelegat
     }
 
     @IBAction func reload(_ sender: Any) {
+        webView.configuration.websiteDataStore.httpCookieStore.injectSharedHTTPCookies()
         if self.webView.isLoading {
             self.webView.stopLoading()
         } else {
@@ -154,6 +156,16 @@ class ___TABLE___DetailsForm: DetailsFormBare, WKUIDelegate, WKNavigationDelegat
             webView.load(navigationAction.request)
         }
         return nil
+    }
+
+}
+
+extension WKHTTPCookieStore {
+
+    fileprivate func injectSharedHTTPCookies() {
+        for cookie in HTTPCookieStorage.shared.cookies ?? [] {
+            setCookie(cookie)
+        }
     }
 
 }
