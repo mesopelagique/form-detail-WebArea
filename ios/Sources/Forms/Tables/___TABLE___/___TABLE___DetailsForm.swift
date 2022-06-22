@@ -95,6 +95,7 @@ class ___TABLE___DetailsForm: DetailsFormBare, WKUIDelegate, WKNavigationDelegat
         webView.uiDelegate = self
         webView.navigationDelegate = self
         webView.scrollView.delegate = self
+        webView.configuration.websiteDataStore.httpCookieStore.injectSharedHTTPCookies()
     }
 
     override func onWillAppear(_ animated: Bool) {
