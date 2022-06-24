@@ -10,6 +10,7 @@ import WebKit
 
 import QMobileAPI
 import QMobileUI
+import Prephirences
 
 /// Generated details form for ___TABLE___ table.
 @IBDesignable
@@ -163,9 +164,20 @@ class ___TABLE___DetailsForm: DetailsFormBare, WKUIDelegate, WKNavigationDelegat
 
 extension WKHTTPCookieStore {
 
-    fileprivate func injectSharedHTTPCookies() {
+    fileprivate func injectSharedHTTPCookies() { // in sdk could use now injectSharedCookies instead
         for cookie in HTTPCookieStorage.shared.cookies ?? [] {
             setCookie(cookie)
+
+            if cookie.domain == "localhost" {
+                // dispatch localhost cookies to all server urls
+                for serverURL in Prephirences.serverURLs ?? [] {
+                    var properties = cookie.properties ?? [:]
+                    properties[.domain] = serverURL
+                    if let serverCookie = HTTPCookie(properties: properties) {
+                        setCookie(serverCookie)
+                    }
+                }
+            }
         }
     }
 
